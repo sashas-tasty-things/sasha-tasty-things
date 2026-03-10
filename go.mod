@@ -1,4 +1,4 @@
-module sasha-tasty-things
+module sashas-tasty-things
 
 go 1.22.2
 

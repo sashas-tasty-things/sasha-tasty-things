@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.css",
-	"sourceRoot": "/home/mic/github/sasha-tasty-things",
+	"sourceRoot": "/home/mic/github/sashas-tasty-things",
 	"sources": [
 		"_vendor/github.com/StefMa/hugo-fresh/assets/style.sass",
 		"_vendor/github.com/jgthms/bulma/bulma.sass",
