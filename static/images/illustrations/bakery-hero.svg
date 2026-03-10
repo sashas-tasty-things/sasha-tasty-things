@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#fff7f0"/>
+  <g transform="translate(140,100)">
+    <ellipse cx="220" cy="140" rx="200" ry="90" fill="#f5d3b3"/>
+    <path d="M60 120 q40 -40 120 -40 q80 0 120 40" fill="#f8c8a1"/>
+    <text x="220" y="200" font-family="Georgia, serif" font-size="32" text-anchor="middle" fill="#8b4b2a">Fresh Today</text>
+  </g>
+</svg>

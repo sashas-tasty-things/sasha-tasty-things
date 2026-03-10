@@ -1,0 +1,149 @@
+baseURL: http://sashas-tasty-things.github.io/
+languageCode: en-us
+title: Sasha's Tasty Things
+
+module:
+  # uncomment line below for local development of module
+  # workspace: hugo.work
+  imports:
+    path: github.com/StefMa/hugo-fresh
+
+
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
+# Disables warnings
+disableKinds:
+- taxonomy
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  openGraph: true
+  description:
+  navbarlogo:
+    image: logos/bakery.svg
+    link: /
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: Freshly baked, every morning.
+    # Hero subtitle (optional)
+    subtitle: Artisan breads, pastries, and sweet treats made daily in the heart of town.
+    # Button text
+    buttontext: Order Online
+    # Where the main hero button links to
+    buttonlink: "#"
+    # Hero image (from static/images/___)
+    image: illustrations/bakery-hero.jpg
+  navbar:
+  - title: Menu
+    url: /
+    button: true
+  - title: Order
+    url: /order
+  - title: Locations
+    url: /locations
+  sidebar:
+    # Logo (from static/images/logos/___.svg)
+    logo: bakery-square
+    sections:
+    - title: Images
+      icon: image
+      links:
+      - text: Library
+        url: /
+      - text: Upload
+        url: /
+  section1:
+    title: Our Bakes
+    subtitle: Fresh, handcrafted, and irresistible
+    tiles:
+    - title: Artisan Breads
+      icon: bread-slice
+      text: Slow-fermented sourdoughs and rustic loaves baked daily.
+      url: /menu/breads
+      buttonText: View breads
+    - title: Pastries & Sweets
+      icon: croissant
+      text: Flaky croissants, danishes, and seasonal pastries.
+      url: /menu/pastries
+      buttonText: View pastries
+    - title: Catering & Events
+      icon: cake-layer
+      text: Custom cakes and pastry platters for your special occasions.
+      url: /catering
+      buttonText: Learn more
+  section2:
+    title: Why choose Sasha's Tasty Things?
+    subtitle: Taste, tradition, and local ingredients
+    features:
+    - title: Handcrafted Quality
+      text: Every item is shaped and baked by our skilled bakers using time-honored techniques.
+      icon: hands-heart
+    - title: Locally Sourced
+      text: We use flour and dairy from nearby farms to ensure freshness and flavor.
+      icon: leaf
+    - title: Daily Fresh
+      text: Small batches baked each morning so you always get the best.
+      icon: sun
+  section3:
+    title: Gallery
+    subtitle: A taste for the eyes as well as the palate
+    image: illustrations/mockups/bakery-mockup.svg
+    buttonText: View gallery
+    buttonLink: "/gallery"
+  section4:
+    title: What customers say
+    subtitle: Fresh praise from our regulars
+    clients:
+    - name: Maya Thompson
+      quote: The croissants here are flaky perfection — best in town!
+      job: Local Designer
+      img: 1
+    - name: Daniel Ruiz
+      quote: Their sourdough has the perfect tang. I buy a loaf every week.
+      job: Teacher
+      img: 2
+    - name: Priya Singh
+      quote: Beautiful cakes and friendly service — highly recommended.
+      job: Event Planner
+      img: 3
+  section5:
+    title: Get in touch
+    subtitle: We'd love to bake something for you
+    buttonText: Contact us
+  footer:
+    # Logo (from static/images/logos/___)
+    logo: logos/bakery-white-alt.svg
+    # Social Media Title
+    socialmediatitle: Follow Us
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://instagram.com/
+      # Icons are from Font Awesome
+      icon: instagram
+    - link: https://facebook.com/
+      icon: facebook
+    bulmalogo: true
+    quicklinks:
+      column1:
+        title: "Menu"
+        links:
+        - text: Breads
+          link: /menu/breads
+        - text: Pastries
+          link: /menu/pastries
+        - text: Cakes
+          link: /menu/cakes
+        - text: Catering
+          link: /catering
+      column2:
+        title: "Stories"
+        links:
+        - text: Recipes & Tips
+          link: /blog/recipes
+        - text: Bakery News
+          link: /blog/news
